@@ -1,5 +1,6 @@
 require_relative '../config/environment'
+require 'tty-prompt'
 
-
-
-puts "HELLO WORLD"
+system "clear"  # clears screen
+app = ReservationApp.new
+app.runner
